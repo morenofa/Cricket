@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "https://github.com/morenofa/Cricket.git"
   },
   "keywords": [
     "Darts",
     "Cricket"
   ],
   "author": "Aitor Moreno Farre",
-  "license": "MIT",
+  "license": "CC BY-NC-SA 4.0",
 
   "devDependencies": {
     "requirejs": "~2.1.16"
