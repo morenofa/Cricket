@@ -1,0 +1,47 @@
+<!-- Game data -->
+<div class="data">
+    <form role="form">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>{{ lang.game_data }}</h3>
+                <hr/>
+                <div class="form-group">
+                    <label for="numJug">{{ lang.num_players }}</label>
+                    <select id="numJug" class="form-control numPla">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gameMode">{{ lang.game_mode }}</label>
+                    <select id="gameMode" class="form-control">
+                        <option value="clasic">{{ lang.clasic }}</option>
+                        <option value="cutThroat">{{ lang.cut_throat }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h3>{{ lang.players }}</h3>
+                    <hr/>
+                    <div class="players"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: right">
+                <hr/>
+                <button id="btnData" type="button" class="btn btn-default">{{ lang.play }}</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,1 @@
+define([],function(){return{saveLocalGameData:function(e,a){"object"==typeof a&&(a=JSON.stringify(a)),localStorage.setItem(e,a)},getLocalGameData:function(e){var a=localStorage.getItem(e);return JSON.parse(a)},removeLocalGameData:function(e){console.log("Remove"),localStorage.removeItem(e)}}});

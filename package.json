@@ -1,0 +1,23 @@
+{
+  "name": "Cricket",
+  "version": "1.1.0",
+  "description": "Save and manage the results of a game of Cricket",
+  "main": "main.js",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "Darts",
+    "Cricket"
+  ],
+  "author": "Aitor Moreno Farre",
+  "license": "MIT",
+
+  "devDependencies": {
+    "requirejs": "~2.1.16"
+  }
+}
