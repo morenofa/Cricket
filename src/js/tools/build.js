@@ -1,5 +1,14 @@
 /**
  * Created by aitor on 9/3/15.
+ *
+ ****************
+ *  FOR BUILD   *
+ ****************
+ *
+ * npm install -g requirejs
+ * cd src/js/tools/
+ * r.js -o build.js
+ *
  */
 
 ({

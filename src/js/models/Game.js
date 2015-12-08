@@ -60,11 +60,15 @@ define(['jquery', 'player'], function($, Player) {
                     if (!this.players[this.currentPlayer].isClosedSector(sector)) {
                         this.players[this.currentPlayer].addPointToSector(sector);
                     } else {
-                        if (this.gameMode == "clasic") {
-                            this.players[this.currentPlayer].addPoints(sector);
-                        } else if (this.gameMode == "cutThroat") {
-                            for (var j = 0; j < this.numPlayers; j++) {
-                                var player = this.players[j];
+                        for (var j = 0; j < this.numPlayers; j++) {
+                            var player = this.players[j];
+
+                            if (this.gameMode == "clasic") {
+                                if (!player.isClosedSector(sector)) {
+                                    this.players[this.currentPlayer].addPoints(sector);
+                                    break;
+                                }
+                            } else if (this.gameMode == "cutThroat") {
                                 if (!player.isClosedSector(sector) && player.getName() != this.players[this.currentPlayer].getName()) {
                                     this.players[j].addPoints(sector);
                                 }
@@ -87,7 +91,7 @@ define(['jquery', 'player'], function($, Player) {
                             points = playerPoints;
                         }
                     } else if (this.gameMode == "cutThroat") {
-                        if (points > playerPoints ) {
+                        if (points > playerPoints || points == 0) {
                             points = playerPoints;
                         }
                     }
@@ -108,11 +112,10 @@ define(['jquery', 'player'], function($, Player) {
         this.nextPlayer = function() {
             this.currentPlayer = (this.currentPlayer + 1) % this.numPlayers;
             if (this.currentPlayer == 0) this.round++;
-            if (this.getCurrentPlayer().hasAllSectorsClosed()) this.nextPlayer();
         };
 
         this.retrieveFromJSON = function(retrievedJson) {
-            this.name = retrievedJson.numPlayers;
+            this.numPlayers = retrievedJson.numPlayers;
             this.currentPlayer = retrievedJson.currentPlayer;
             this.round = retrievedJson.round;
             this.gameMode = retrievedJson.gameMode;
