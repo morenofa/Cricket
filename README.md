@@ -1,10 +1,18 @@
 # Cricket
 
-Cricket is a simple javascript page for manage the results of a game of Cricket.
+Cricket is a simple javascript page for for keeping track of score of darts game cricket.
 
 ## TODOs
 
 * Moving the html code injected in the app.js file to Handlebars partials
+
+## Features
+
+- Games: Cricket
+- Modes: Clasic, Cut-Throat
+- Player: 1-10
+- Manage history (Rolback option)
+- Languages
 
 ## Live preview
 
@@ -12,4 +20,4 @@ Cricket is a simple javascript page for manage the results of a game of Cricket.
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
