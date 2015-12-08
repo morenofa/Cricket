@@ -2,10 +2,6 @@
 
 Cricket is a simple javascript page for for keeping track of score of darts game cricket.
 
-## TODOs
-
-* Moving the html code injected in the app.js file to Handlebars partials
-
 ## Features
 
 - Games: Cricket
@@ -17,6 +13,10 @@ Cricket is a simple javascript page for for keeping track of score of darts game
 ## Live preview
 
 <a href="http://cricket-darts.tk" target="_blank">www.cricket-darts.tk</a>
+
+## TODOs
+
+* Moving the html code injected in the app.js file to Handlebars partials
 
 ## License
 
