@@ -8,7 +8,7 @@ Cricket is a simple javascript page for manage the results of a game of Cricket.
 
 ## Live preview
 
-<a rel="license" href="http://cricket-darts.tk">www.cricket-darts.tk</a>
+<a href="http://cricket-darts.tk" target="_blank">www.cricket-darts.tk</a>
 
 ## License
 
