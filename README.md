@@ -10,13 +10,13 @@ Cricket is a simple javascript page for for keeping track of score of darts game
 - Manage history (Rolback option)
 - Languages
 
-## Live preview
-
-<a href="http://cricket-darts.tk" target="_blank">www.cricket-darts.tk</a>
-
 ## TODOs
 
 * Moving the html code injected in the app.js file to Handlebars partials
+
+## Live preview
+
+<a href="http://cricket-darts.tk" target="_blank">www.cricket-darts.tk</a>
 
 ## License
 
